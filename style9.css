@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&family=Raleway:wght@300;400;500;600&display=swap');
+
+:root {
+    --chuva: #65adffa5;
+}
+
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 8px;
+      box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+      overflow: hidden;
+    background: #fbfbfb;
+    color: #333;
+      font-family: 'Open Sans', Helvetica, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  .informacoes {
+    height: 90px;
+    width: 400px;
+    background-color: #fdf9f6;
+    font-family: 'Quicksand', sans-serif;
+    position: relative;
+    z-index: 8;
+    .temp-atual > h1 {
+        margin: 0;
+        padding-top: 30px;
+        font-size: 3em;
+        font-weight: 100;
+        position: relative;
+        top: -14px;
+        left: 27px;
+        letter-spacing: 6px;
+    }
+
+    .vento {
+        position: relative;
+        top: -80px;
+        left: 115px;
+    }
+
+    .umidade {
+        position: relative;
+        top: -95px;
+        left: 115px;
+    }
+
+    .nome-dia {
+        font-size: 1.25em;
+        font-weight: 100;
+    }
+
+    .temp {
+        font-size: 1.2em;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 400;
+        position: relative;
+        top: -45px;
+        left: 40px;
+    }
+
+    #dia-1 {
+        position: relative;
+        top: -160px;
+        left: 280px;
+    }
+
+    #dia-2 {
+        position: absolute;
+        bottom: -40px;
+        right: 68px;
+        
+        .temp {
+            left: 50px;
+        }
+    }
+  }
+
+  .animacao{
+    height: 310px;
+    width: 400px;
+    background-color: #1A2238;
+    position: relative;
+    z-index: -7;
+        .lua {
+            height: 70px;
+            width: 70px;
+            overflow: hidden;
+            border-radius: 50%;
+            background-color: #F6EDBD;
+            transition: all 3s ease-in-out;
+            position: relative;
+            top: 63px;
+            left: 55px;
+            animation: lua-sobe 2s linear 1;
+            z-index: -5;
+
+
+            .cratera {
+                background-color: rgba(230, 204, 98, 0.19);
+                height: 8px;
+                width: 8px;
+                border-radius: 50%;
+                position: absolute;
+            }
+            .grande {
+                top: 20px;
+                left: 10px;
+                scale: 2.2;
+            }
+            .media{
+                top: 20px;
+                left: 25px;
+                scale: 1.6;
+            }
+            .pequena {
+                top: 20px;
+                left: 35px;
+            }
+
+            #cratera-um {
+                top: 10px;
+                left: 50px;
+            }
+
+            #cratera-dois {
+                top: 50px;
+            }
+
+            #cratera-tres {
+                top: 55px;
+                left: 50px;
+            }
+
+            #cratera-quatro {
+                top: 55px;
+                left: 30px;
+            }
+
+            #cratera-cinco {
+                top: 30px;
+                left: 10px;
+            }
+
+            #cratera-seis {
+                top: 4px;
+                left: 21px;
+            }
+
+            #cratera-sete {
+                top: 30px;
+                left: 60px;
+            }
+
+            #cratera-oito {
+                top: 40px;
+                left: 40px;
+            }
+
+            #cratera-nove {
+                top: 10px;
+            }
+
+            #cratera-dez {
+                top: 30px;
+                left: 30px;
+            }
+
+            #cratera-onze {
+                top: 20px;
+                left: 2px;
+            }
+        }
+        .lua:hover {
+            background-color: #fffbe3;
+            scale: 1.1;
+        }
+
+        .luz {
+            position: absolute;
+            left: 55px;
+            top: 63px;
+            z-index: inherit;
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            background-color: #F6EDBD;
+            filter: blur(9px);
+            animation: lua-sobe 3s linear 1;
+        }
+        
+        .montes {
+            height: 100px;
+            position: relative;
+            bottom: -125px;
+
+            .monte {
+                height: 230px;
+                width: 290px;
+                border-radius: 50%;
+                background-color: #303C5D;
+                position: absolute;
+                z-index: -5;
+            }
+
+            .frente {
+                position: relative;
+                z-index: -1;
+                
+                .um {
+                    left: -100px;
+                    top: 50px;
+                } 
+                .dois {
+                    left: 80px;
+                    bottom: -240px;
+                    z-index: 3;
+                    box-shadow: 3px 30px 10px 3px rgb(0, 0, 0);
+                }
+                .tres {
+                    left: 310px;
+                    bottom: -270px;
+                }
+            }
+            
+
+            .tras {
+                position: relative;
+                z-index: -4;
+                .monte {
+                    background-color: #26314F;
+                }
+                .um {
+                    left: 200px;
+                }
+                .dois {
+                    left: -30px;
+                    top: -1px;
+                }
+            }
+        }
+
+        .gotas-de-chuva {
+            
+            .gota {
+                background-color: var(--chuva);
+                height: 16px;
+                width: 16px;
+                border-radius: 50%;
+                animation: caindo .8s linear infinite;
+                .meio {
+                    background-color: var(--chuva);
+                    height: 10px;
+                    width: 10px;
+                    border-radius: 50%;
+                    position: relative;
+                    left: 5px;
+                    top: -3px;
+                }
+                .ponta {
+                    height: 0;
+                    width: 0;
+                    border-left: 5px solid transparent;
+                    border-right: 10px solid transparent;
+                    border-bottom: 10px solid var(--chuva);
+                    border-radius: 3px;
+                    rotate: 145deg;
+                    position: relative;
+                    top: -13px;
+                    left: 3px;
+                }
+            }     
+
+            .grande {
+                transform: scaleX(.3);
+                scale: .6;
+            }
+
+            .media {
+                transform: scaleX(.7);
+                scale: .4;
+            }
+
+            .pequena {
+                transform: scaleX(.5);
+                scale: .3;
+                z-index: -4;
+            }
+            
+            #grande-dois {
+                position: absolute;
+                left: 10px;
+                animation: caindo .9s infinite;
+            }
+            #grande-tres {
+                position: absolute;
+                left: 130px;
+                animation: caindo .9s infinite;
+            }
+            #grande-quatro {
+                position: absolute;
+                left: 130px;
+                animation: caindo 1s infinite;
+            }
+            #grande-cinco {
+                position: absolute;
+                left: 190px;
+                animation: caindo .5s infinite;
+            }
+            #grande-seis {
+                position: absolute;
+                left: 200px;
+                animation: caindo 1.4s infinite;
+            }
+            #grande-sete {
+                position: absolute;
+                left: 250px;
+                animation: caindo .8s infinite;
+            }
+            #grande-oito {
+                position: absolute;
+                left: 310px;
+                animation: caindo .9s infinite;
+            }
+            #grande-nove {
+                position: absolute;
+                left: 330px;
+                animation: caindo .7s infinite;
+            }
+            #grande-dez {
+                position: absolute;
+                left: 350px;
+                animation: caindo 1s infinite;
+            }
+            #grande-onze {
+                position: absolute;
+                left: 320px;
+                animation: caindo 1s infinite;
+            }
+            #grande-doze {
+                position: absolute;
+                left: 370px;
+                animation: caindo .7s infinite;
+            }
+            #media-um {
+                position: absolute;
+                left: 360px;
+                animation: caindo 1s infinite;
+            }
+            #media-dois {
+                position: absolute;
+                left: 340px;
+                animation: caindo .6s infinite;
+            }
+            #media-tres {
+                position: absolute;
+                left: 1330px;
+                animation: caindo .8s infinite;
+            }
+            #media-quatro {
+                position: absolute;
+                left: 230px;
+                animation: caindo .9s infinite;
+            }
+            #media-cinco {
+                position: absolute;
+                left: 230px;
+                animation: caindo .6s infinite;
+            }
+            #media-seis {
+                position: absolute;
+                left: 110px;
+                animation: caindo .7s infinite;
+            }
+            #media-sete {
+                position: absolute;
+                left: 180px;
+                animation: caindo .9s infinite;
+            }
+            #media-oito {
+                position: absolute;
+                left: 270px;
+                animation: caindo .8s infinite;
+            }
+            #media-nove {
+                position: absolute;
+                left: 30px;
+                animation: caindo .5s infinite;
+            }
+            
+            #pequena-um {
+                position: absolute;
+                left: 30px;
+                animation: caindo 1.6s infinite;
+            }
+            #pequena-dois {
+                position: absolute;
+                left: 80px;
+                animation: caindo 1s infinite;
+            }
+            #pequena-tres {
+                position: absolute;
+                left:140px;
+                animation: caindo .8s infinite;
+            }
+            #pequena-quatro {
+                position: absolute;
+                left: 180px;
+                animation: caindo 1s infinite;
+            }
+            #pequena-cinco {
+                position: absolute;
+                left: 240px;
+                animation: caindo 1s linear infinite;
+            }
+            #pequena-seis {
+                position: absolute;
+                left: 270px;
+                animation: caindo 1.5s infinite;
+            }
+            #pequena-sete {
+                position: absolute;
+                left: 320px;
+                animation: caindo .8s infinite;
+            }
+            #pequena-oito {
+                position: absolute;
+                left: 360px;
+                animation: caindo 1.5s infinite;
+            }
+        }
+    }
+
+@keyframes caindo {
+    0% {
+        position: absolute;
+        top: 0px;
+    }
+    80% {
+        transform: scaleX(1);
+    }
+    100%{
+        transform: scaleX(4);
+        position: absolute;
+        top: 329px;
+    }
+}
+
+@keyframes lua-sobe {
+    0% {
+        top: 260px;
+    }
+}

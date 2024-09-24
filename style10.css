@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Kawi:wght@400;500;600;700&display=swap');
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 7px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #4C4C4C;
+  color: #ffffff;
+  font-family: 'Noto Sans Kawi', sans-serif;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.principal {
+    background-color: #242424;
+    height: 214px;
+    width: 214px;
+    border-radius: 50%;
+    border: 8px solid #3A3A3A;
+
+    .circulo {
+        stroke: #F85B5B;
+        stroke-width: 5;
+        stroke-dasharray: 625;
+        stroke-linecap: round;
+        fill: transparent;
+        transform-origin: center center;
+        transform: rotate(-90deg);
+        animation: roda 6s linear infinite;
+    }
+
+    .pontilhado {
+        height: 180px;
+        width: 180px;
+        border-radius: 50%;
+        border: 2px dashed rgb(255, 255, 255);
+        position: absolute;
+        top: 23px;
+        left: 23px;
+
+        .informacoes {
+            height: 70px;
+            width: 100px;
+            padding: 0;
+            margin: 0;
+            position: relative;
+            top: 2px;
+            left: 40px;
+            .data {
+                font-weight: 100;
+                font-size: .7em;
+                text-align: center;
+                position: relative;
+                top: 40px;
+            }
+            .hora {
+                font-size: 1.2em;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+                position: relative;
+                bottom: 0px;
+            }
+            .batimentos {
+                height: 12px;
+                width: 40px;
+                position: relative;
+                left: 2px;
+                bottom: 50px;
+
+                .coracao {
+                    position: absolute;
+                    left: 2px;
+                    animation: bate .4s alternate infinite;
+                    .lado-1 {
+                        height: 10px;
+                        width: 6px;
+                        background-color: #F85B5B;
+                        border-radius: 30px 30px 0px 0px;
+                        rotate: -45deg;
+                    }
+                    .lado-2 {
+                        height: 10px;
+                        width: 6px;
+                        background-color: #F85B5B;
+                        border-radius: 30px 30px 0px 0px;
+                        rotate: 45deg;
+                        position: inherit;
+                        bottom: 0px;
+                        left: 3px;
+                    }                 
+                }
+                .valor-batimentos {
+                    font-size: .7em;
+                    position: relative;
+                    bottom: 3px;
+                    left: 17px;
+                    margin: 0px;
+                    padding: 0px;
+                }
+            }
+            .calorias  {
+                font-size: .7em;
+                position: relative;
+                bottom: 65px;
+                left: 45px;
+            }
+        }
+    }
+}
+
+@keyframes roda {
+    from {
+		stroke-dashoffset: 625;
+		transform: rotate(-90deg) scaleY(1);
+	}
+	50% {
+		stroke-dashoffset: 0;
+		transform: rotate(-90deg) scaleY(1);
+	}
+	50.001% {
+		transform: rotate(-90deg) scaleY(-1);
+	}
+	to {
+		stroke-dashoffset: 625;
+		transform: rotate(-90deg) scaleY(-1);
+	}
+}
+
+@keyframes bate {
+    0% {
+        scale: 1.1;
+    }
+}

@@ -1,0 +1,226 @@
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 4px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #264057;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.principal {
+    height: 303px;
+    width: 303px;
+    background-color: #FFFFFF;
+    border-radius: 2px;
+}
+
+.cabecalho {
+    background-color: rgb(97, 171, 175);
+    color: azure;
+    height: 62px;
+    
+    .titulo {
+        text-align: center;
+        letter-spacing: 0.9px;
+        font-size: 1.08em;
+        font-weight: 600;
+        position: relative;
+        top: 20px;
+    }
+
+    .menu {
+        height: 20px;
+        width: 35px;
+        position: relative;
+        left: 20px;
+
+        .linha {
+            background-color: rgba(255, 255, 255, 0.455);
+            height: 4px;
+            border-radius: 30px;
+        }
+
+        .primeira {
+            width: 25px;
+        }
+
+        .bolinha {
+            background-color: rgba(255, 252, 252, 0.452);
+            height: 9px;
+            width: 9px;
+            border-radius: 50%;
+            position: absolute;
+            right: 0;
+            top: -3px;
+        }
+        
+        .segunda {
+            position: relative;
+            top: 9px;
+        }
+        
+    }
+
+    .lupinha {
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        transition: all 9s ease-in-out;
+        .circulo {
+            height: 11px;
+            width: 11px;
+            border-radius: 50%;
+            border: 3.4px rgba(255, 252, 252, 0.452) solid;
+        }
+        .alca {
+            background-color: rgba(255, 252, 252, 0.452);
+            height: 4px;
+            width: 10px;
+            rotate: 45deg;
+            border-radius: 30px;
+            position: relative;
+            left: 12px;
+            top: -1.5px;
+        }
+    }
+}
+
+.linha-do-tempo {
+    width: 15px;
+    height: 241px;
+    position: absolute;
+    left: 22px;
+
+    .linha {
+        width: 3px;
+        height: 45px;
+        background-color: #41414130;
+        position: absolute;
+        left: 5.5px;
+    }
+
+    .marco {
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        border: 2px rgb(97, 171, 175) solid;
+    }
+
+    #marco-um {
+        position: absolute;
+        top: 22px;
+    }
+
+    #marco-dois {
+        position: absolute;
+        top: 92px;
+    }
+
+    #marco-tres {
+        position: absolute;
+        top: 160px;
+    }
+
+    #linha-um {
+        height: 20px;
+        border-radius: 3px;
+
+    }
+
+    #linha-dois {
+        position: absolute;
+        top: 37px;
+        border-radius: 3px;
+        height: 52px;
+    }
+    
+    #linha-tres {
+        position: absolute;
+        top: 107px;
+        border-radius: 3px;
+        height: 50px;
+    }
+
+    #linha-quatro {
+        position: absolute;
+        top: 174px;
+        border-radius: 3px;
+        height: 70px;
+    }
+}
+
+.notificacoes {
+    height: 190px;
+    width: 235px;
+    position: absolute;
+    right: 25px;
+    bottom: 30px;
+    color: #777777;
+    
+    p {
+        margin: 0;
+    }
+    
+    .notificacao {
+        margin-bottom: 19px;
+        font-size: 15px;
+        transition: all .5 ease-in-out;
+    }
+
+    .notificacao:hover {
+        color: rgb(97, 171, 175);;
+    }
+
+    .horario {
+        font-size: 12px;
+        margin: 0;
+    }
+}
+
+.barra-de-pesquisa {
+    height: 35px;
+    width: 230px;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    position: absolute;
+    left: -250px;
+    top: -7px;
+    display: none;
+
+    p {
+        color: #3333337a;
+        font-size: 14px;
+        position: absolute;
+        left: 20px;
+        top: -6px;
+    }
+}
+
+.lupinha:hover {
+    cursor: pointer;
+    .barra-de-pesquisa {
+        display: block;
+    }
+}
+
+.menu:hover{
+    scale: 1.1;
+}

@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,300;16..144,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap');
+
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+      box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+      overflow: hidden;
+    background-image: linear-gradient(45deg, #EDBD6B, #CB7D4E);
+    border-radius: 5px;
+    color: #333;
+      font-family: 'Open Sans', Helvetica, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  .tudo { 
+    height: 300px;
+    width: 325px;
+    background-color: rgb(255, 239, 219);
+    border-radius: 4px;
+    box-shadow: 0 0 13px 0 rgba(0,0,0,0.2);
+  }
+
+  .principal {
+    height: 300px;
+    width: 200px;
+    color: #03360faa;
+    
+    img { 
+    scale: .9;
+    border-radius: 50%;
+    position: absolute;
+    left: 50px;
+    top: 40px;
+    }
+    
+    .primeiro {
+        scale: .95;
+        height: 103px;
+        width: 103px;
+        margin: 0;
+        position: absolute;
+        top: 36px;
+        left: 48px;
+        border: 1px solid;
+        border-color: #012309 #012309 #012309 transparent;
+        border-radius: 50%;
+        transition: all 1.5s ease-in-out;
+    }
+    
+    .segundo {
+        height: 103px;
+        width: 103px;
+        margin: 0;
+        position: absolute;
+        top: 36px;
+        left: 48px;
+        border: 1px solid;
+        border-radius: 50%;
+        scale: 1.03;
+        border-color: #012309 transparent #012309 #012309;
+        transition: all 1.5s ease-in-out;
+    }
+    .circulo:hover {
+        cursor: pointer;
+        transform: rotate(360deg);
+    }
+    
+    h2 {
+        font-family: 'Montagu Slab', serif;
+        font-size: 16px;
+        position: relative;
+        top: 135px;
+        text-align: center;
+    }
+
+    p {
+        font-family: 'Montagu Slab', serif;
+        font-size: 13px;
+        position: relative;
+        top: 123px;
+        text-align: center;
+    }
+
+    button {
+        font-family: 'Raleway', sans-serif;
+        display: block;
+        width: 123px;
+        height: 30px;
+        margin: 0 auto 10px auto;
+        border: 1px solid #1f4704dc;
+        border-radius: 15px;
+        font-size: 13px;
+        font-weight: 500;
+        background: none;
+        position: relative;
+        top: 140px;
+        transition: all .3s ease-in-out;
+        color: #012309;
+    }
+
+    button:hover {
+        background-color: #1f4704dc;
+        color: azure;
+    }
+  }
+
+  .lateral {
+    height: 300px;
+    width: 125px;
+    position: relative;
+    top: -300px;
+    left: 200px;
+    color: #012309a3;
+    font-family: 'Raleway', sans-serif;
+
+    h3 {
+        font-family: 'Montagu Slab', serif;
+        margin: 0;
+        position: relative;
+        top: 30px;
+        text-align: center;
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 13px;
+        text-align: center;
+        position: relative;
+        top: 18px;
+    }
+
+    .caixa {
+        height: 99.5px;
+        width: 125px;
+        background-color: #EDBD6B;
+        transition: all .3s ease-in-out;
+    }
+    .caixa:hover {
+        background-color: rgba(121, 4, 189, 0.306);
+    }
+    .posts { 
+    background-color: rgba(209, 130, 255, 0.289);
+    }
+   
+
+    .likes {
+    background-color: rgba(196, 93, 255, 0.289);
+    margin-top: 1px;
+    margin-bottom: 1px;
+    }
+
+    .follower {
+    background-color: rgba(163, 55, 226, 0.289);
+    }
+        
+  }
+
+  .caixa {
+    height: 99.5px;
+    width: 125px;
+    background-color: #EDBD6B;
+  }
+
+  .posts { 
+    background-color: rgba(210, 134, 255, 0.289);
+  }
+
+  .likes {
+    background-color: rgba(196, 93, 255, 0.289);
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+
+  .follower {
+    background-color: rgba(163, 55, 226, 0.289);
+  }
+
+  

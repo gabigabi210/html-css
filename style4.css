@@ -1,0 +1,88 @@
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 7px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: #E56262;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+  
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.primeiro-circulo {
+    height: 95px;
+    width: 95px;
+    border-radius: 50%;
+    background-color: azure;
+    box-shadow: 3px 6px 12px 0 rgba(0,0,0,0.4);
+    animation-fill-mode: both;
+    animation: encolhe-e-volta-g 2s infinite alternate;
+}
+
+.segundo-circulo {
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    background-color: azure;
+    box-shadow: 3px 6px 12px 0 rgba(0,0,0,0.4);
+    position: absolute;
+    left: 16%;
+    top: 16%;
+    animation-fill-mode: both;
+    animation: encolhe-e-volta-m 2s infinite alternate;
+}
+
+.terceiro-circulo {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: azure;
+    box-shadow: 3px 6px 12px 0 rgba(0,0,0,0.4);
+    position: absolute;
+    left: 32%;
+    top: 32%;
+    animation-fill-mode: both;
+    animation: encolhe-e-volta-p 2s infinite alternate;
+    
+}
+
+@keyframes encolhe-e-volta-p {
+    0%, 70% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes encolhe-e-volta-m {
+    0%, 40% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes encolhe-e-volta-g {
+    0%, 10% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
